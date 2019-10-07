@@ -80,6 +80,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
 
         // 'users' => [
         //     'driver' => 'database',
@@ -108,6 +112,11 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+        'admins' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ]
     ],
 
 ];

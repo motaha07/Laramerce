@@ -1,5 +1,7 @@
 <?php
 
+// the below line to include the admin routes into the web.php file.
+require 'admin.php';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,8 +12,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('/admin', 'admin.dashboard.index');
+
