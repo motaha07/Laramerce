@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
+use App\Models\Setting;
+use Schema;
 class SettingServiceProvider extends ServiceProvider
 {
     /**
